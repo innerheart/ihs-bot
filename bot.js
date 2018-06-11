@@ -7,13 +7,13 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!ping') {
-    	message.tts('pong');
+    	message.reply('pong');
   	}
 });
 
 client.on('message', message => {
   if (message.content === '!avatar') {
-    message.tts(message.author.avatarURL);
+    message.reply(message.author.avatarURL);
   }
 });
 
