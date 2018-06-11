@@ -19,7 +19,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '!husbando') {
-    message.channel.sendMessage(https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg:large);
+    message.channel.sendMessage('https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg:large');
   }
 });
 
