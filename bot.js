@@ -13,13 +13,19 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '!avatar') {
-    message.channel.sendMessage('message.author.avatarURL');
+    message.channel.send(message.author.avatarURL);
   }
 });
 
 client.on('message', message => {
   if (message.content === '!husbando') {
-    message.channel.send( {files:["https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg:large"]});
+    message.channel.send("https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg:large");
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '!poker') {
+    message.channel.send( {files:["https://i.imgur.com/mQR1csw.png"]});
   }
 });
 
