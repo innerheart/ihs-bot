@@ -7,15 +7,16 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.content === '!ping') {
-    	message.reply('pong');
+    	message.send('pong');
   	}
 });
 
 client.on('message', message => {
   if (message.content === '!avatar') {
-    message.reply(message.author.avatarURL);
+    message.send(message.author.avatarURL);
   }
 });
+
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
