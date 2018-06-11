@@ -29,6 +29,17 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === '!snek') {
+    message.channel.send("It's me, Snek!"{files:["https://i.imgur.com/JzYm9q7.png"]});
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '!gbfs') {
+    message.channel.send( {files:["https://i.imgur.com/6tLrau1.png"]});
+  }
+});
 
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
