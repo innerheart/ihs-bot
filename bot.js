@@ -11,7 +11,7 @@ client.on('message', message => {
   	}
 client.on('message', message => {
     if (message.content === '!random') {
-    	message.reply('Math.floor(Math.random() * 100) + 1;');
+    	message.reply(Math.floor(Math.random() * 100) + 1);
   	}
 });
 
