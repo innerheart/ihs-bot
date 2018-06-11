@@ -13,13 +13,13 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '!avatar') {
-    message.channel.sendMessage(file:'message.author.avatarURL');
+    message.channel.sendMessage({file:['message.author.avatarURL']});
   }
 });
 
 client.on('message', message => {
   if (message.content === '!husbando') {
-    message.channel.sendMessage(file:'https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg:large');
+    message.channel.sendMessage({file:['https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg:large']});
   }
 });
 
