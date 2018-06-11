@@ -31,7 +31,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '!snek') {
-    message.channel.send("It's me, Snek!"{files:["https://i.imgur.com/JzYm9q7.png"]});
+    message.channel.send("It's me, Snek!",{files:["https://i.imgur.com/JzYm9q7.png"]});
   }
 });
 
