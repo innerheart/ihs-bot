@@ -41,5 +41,30 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === '!bea') {
+    message.channel.send( {files:["https://i.imgur.com/QkFvO2v.png"]});
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '!hitme') {
+    message.channel.send("Hit me!!",{files:["https://i.imgur.com/TVpXU3V.png"]});
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '!kowai') {
+    message.channel.send({files:["https://i.imgur.com/CQPF2tc.gif"]});
+  }
+});
+
+client.on('message', message => {
+  if (message.content === '!teehee') {
+    message.channel.send("Tee-Hee〜★",{files:["https://gbf.wiki/images/8/8f/Stamp142jp.png"]});
+  }
+});
+
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
