@@ -61,7 +61,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '!wow') {
-    message.channel.send({files:["https://gbf.wiki/images/0/06/Stamp57jp.png"]});
+    message.channel.send("**WOW!**",{files:["https://gbf.wiki/images/0/06/Stamp57jp.png"]});
   }
 });
 
