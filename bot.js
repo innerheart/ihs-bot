@@ -54,7 +54,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === '!kowai') {
+  if (message.content === '!scary') {
     message.channel.send({files:["https://i.imgur.com/CQPF2tc.gif"]});
   }
 });
