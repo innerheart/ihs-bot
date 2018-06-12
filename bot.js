@@ -60,6 +60,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+  if (message.content === '!wow') {
+    message.channel.send({files:["https://gbf.wiki/images/0/06/Stamp57jp.png"]});
+  }
+});
+
+client.on('message', message => {
   if (message.content === '!teehee') {
     message.channel.send("Tee-Hee〜★",{files:["https://gbf.wiki/images/8/8f/Stamp142jp.png"]});
   }
