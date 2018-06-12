@@ -73,7 +73,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '!ihs.') {
-    message.channel.send("my master is so cute 〜<3 ");
+    message.channel.send("my lovely master 〜 <3 ");
   }
 });
 
