@@ -79,7 +79,7 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '!nani') {
-    message.channel.send("N.. Nani!?",{files:["https://i.imgur.com/3gRthTt.jpg"]});
+    message.channel.send("N.. Nani !?",{files:["https://i.imgur.com/3gRthTt.jpg"]});
   }
 });
 
