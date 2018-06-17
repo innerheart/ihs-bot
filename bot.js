@@ -83,5 +83,11 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === '!huh') {
+    message.channel.send("Huh?",{files:["https://cdn.discordapp.com/attachments/168749859111698432/457664238446444546/C6.png"]});
+  }
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
