@@ -89,5 +89,11 @@ client.on('message', message => {
   }
 });
 
+client.on('message', message => {
+  if (message.content === '!zoi') {
+    message.channel.send({files:["http://i.imgur.com/yJ35t3i.png"]});
+  }
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
