@@ -13,13 +13,12 @@ client.on('message', message => {
 
 client.on('message', message => {
   if (message.content === '!avatar') {
-    message.channel.send(message.author.avatarURL);
-  }
-});
-
-client.on('message', message => {
-  if (message.content === "!avatar ${member.user.tag}") {
-    message.channel.send({embed: {"${member.user.avatarURL}");
+    let user = message.mentions.users.first() || message.author;
+    let embed = new Discord.RichEmbed()
+    .setAuthor("${user.username}")
+    .setImage(user.displayAvatarURL)
+    .setColor('RANDOM')
+    message.channel.send(embed)
   }
 });
 
