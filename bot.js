@@ -16,7 +16,7 @@ client.on('message', message => {
     const command = args.shift().toLowerCase();
     
   if (command === 'avatar') {
-    let user = message.mentions.users.first() || message.author;
+    let user = message.mentions.users.first()
     let embed = new Discord.RichEmbed()
     .setAuthor(`${user.username}`)
     .setImage(user.displayAvatarURL)
