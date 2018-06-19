@@ -15,13 +15,12 @@ client.on('message', message => {
     const args = message.content.slice(prefix.length).trim().split(/ +/g);
     const command = args.shift().toLowerCase();
     
-  if (command === 'avatar') {
-    let user = message.mentions.users.first()
-    let embed = new Discord.RichEmbed()
-    .setAuthor(`${user.username}`)
-    .setImage(user.displayAvatarURL)
-    .setColor('RANDOM')
-    message.channel.send(embed)
+  if (message.content === '!avatar') {
+    user = message.mentions.users.first()
+    message.channel.send({embed: {
+    image: {
+    url: `${member.user.avatarURL}`
+    }});
   }
 });
 
