@@ -7,15 +7,13 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    if (message.content === '!ping') {
-    	message.channel.sendMessage('pong');
-  	}
-});
-
-client.on('message', message => {
     if (message.author.bot) return undefined;
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
+    
+    if(command === 'ping'){
+        message.channel.send('pong');
+    }
     
     if(command === 'ihs.'){
         message.channel.send('my master!');
@@ -70,7 +68,7 @@ client.on('message', message => {
     }
     
     if (command === 'avatar') {
-    let user = message.mentions.users.first() || message.author;
+    let user = message.mentions.users.first();
     let embed = new Discord.RichEmbed()
     .setAuthor(`${user.username}`)
     .setImage(user.displayAvatarURL)
