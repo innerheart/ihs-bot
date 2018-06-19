@@ -18,6 +18,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+  if (message.content === "!avatar,${member.user.tag}") {
+    message.channel.send({embed: {"${member.user.avatarURL}");
+  }
+}});
+
+client.on('message', message => {
   if (message.content === '!husbando') {
     message.channel.send("https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg:large");
   }
