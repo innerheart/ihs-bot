@@ -12,7 +12,12 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === '!avatar') {
+    if (message.author.bot) return undefined;
+    let nsg = message.content.toLowerCase();
+    let args = message.content.slice(prefix.length).trin().split(' ');
+    let command = args.shift().toLowerCase();
+    
+  if (command === 'avatar') {
     let user = message.mentions.users.first() || message.author;
     let embed = new Discord.RichEmbed()
     .setAuthor("${user.username}")
