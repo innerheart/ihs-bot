@@ -18,7 +18,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-  if (message.content === "!avatar,${member.user.tag}") {
+  if (message.content === "!avatar ${member.user.tag}") {
     message.channel.send({embed: {"${member.user.avatarURL}");
   }
 }});
