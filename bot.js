@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const prefix = '!';
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -12,15 +13,16 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    const args = message.content.slice(prefix.length).trim().split(/ +/g);
-    const command = args.shift().toLowerCase();
+    let args = message.content.slice(prefix.length).trim().split(' ');
+    let command = args.shift().toLowerCase();
     
-  if (message.content === '!avatar') {
-    user = message.mentions.users.first()
-    message.channel.send({embed: {
-    image: {
-    url: `${member.user.avatarURL}`
-    }});
+  if (command === 'avatar') {
+    let user = message.mentions.user.first() || message.author;
+    let embed = new Discord.RichEmbed()
+    .setAuthor(`${user.username}`)
+    .setImage(user.displayAvatarURL)
+    .setColor('RANDOM')
+    message.channel.send(embed)
   }
 });
 
