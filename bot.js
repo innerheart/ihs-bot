@@ -13,11 +13,16 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
+    if (message.author.bot) return undefined;
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
     
-  if (command === 'avatar') {
-    let user = message.mentions.user.first() || message.author;
+    if(command === 'ihs.'){
+        message.channel.send('my master!');
+    }
+    
+    if (command === 'avatar') {
+    let user = message.mentions.users.first() || message.author;
     let embed = new Discord.RichEmbed()
     .setAuthor(`${user.username}`)
     .setImage(user.displayAvatarURL)
@@ -77,12 +82,6 @@ client.on('message', message => {
 client.on('message', message => {
   if (message.content === '!teehee') {
     message.channel.send("Tee-Hee〜★",{files:["https://gbf.wiki/images/8/8f/Stamp142jp.png"]});
-  }
-});
-
-client.on('message', message => {
-  if (message.content === '!ihs.') {
-    message.channel.send("my lovely master 〜 :heart: ");
   }
 });
 
