@@ -40,7 +40,7 @@ client.on('message', message => {
     }
     
     if(command === 'hitme'){
-        message.channel.send("**Hit me !!**",{files:["https://i.imgur.com/TVpXU3V.png"]});
+        message.channel.send("**HIT ME !!**",{files:["https://i.imgur.com/TVpXU3V.png"]});
     }
     
     if(command === 'scary'){
