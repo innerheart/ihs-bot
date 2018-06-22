@@ -68,9 +68,17 @@ client.on('message', message => {
         message.channel.send({files:["http://i.imgur.com/yJ35t3i.png"]});
     }
     
+    if (msg.startsWith(Prefix + 'avatar')) {
+    let User = message.mentions.users.first() || message.author;
+    let aEmbed = new Discord.RichEmbed()
+        .setColor('RANDOM')
+        .setTitle(`${User.username}'s avatar`)
+        .setImage(`${User.displayAvatarURL}`)
+    message.channel.send(aEmbed);
+    }
+    
     if (command === 'avatar') {
-    let user = message.mentions.users.first() || message.author;
-        
+    let user = message.mentions.users.first() || message.author;        
     let embed = new Discord.RichEmbed()
     .setAuthor(`${user.username}`)
     .setImage(user.displayAvatarURL)
