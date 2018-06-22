@@ -71,7 +71,7 @@ client.on('message', message => {
     let user = message.mentions.users.first() || message.author;
         
     let embed = new Discord.RichEmbed()
-    .setAuthor(`${user.username}'s Avatar`)
+    .setAuthor('${user.username}')
     .setImage(user.displayAvatarURL)
     .setColor('RANDOM')
     message.channel.send(embed)
