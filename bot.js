@@ -8,6 +8,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.author.bot) return undefined;
+    let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
     
@@ -71,7 +72,7 @@ client.on('message', message => {
     let user = message.mentions.users.first() || message.author;
         
     let embed = new Discord.RichEmbed()
-    .setAuthor('${user.username}')
+    .setAuthor(`${user.username}`)
     .setImage(user.displayAvatarURL)
     .setColor('RANDOM')
     message.channel.send(embed)
