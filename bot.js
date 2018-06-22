@@ -1,4 +1,4 @@
-const discord = require('discord.js');
+const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
 
@@ -70,7 +70,7 @@ client.on('message', message => {
    
     if (command === 'avatar') {
     let user = message.mentions.users.first() || message.author;        
-    let embed = new discord.RichEmbed()
+    let embed = new Discord.RichEmbed()
     .setTitle(`${user.username}'s avatar`)
     .setImage(`${user.displayAvatarURL}`)
     message.channel.send(embed)
