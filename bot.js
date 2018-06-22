@@ -68,7 +68,7 @@ client.on('message', message => {
         message.channel.send({files:["http://i.imgur.com/yJ35t3i.png"]});
     }
     
-    if (msg.startsWith(Prefix + 'avatar')) {
+    if (msg.startsWith(prefix + 'avatar')) {
     let User = message.mentions.users.first() || message.author;
     let aEmbed = new Discord.RichEmbed()
         .setColor('RANDOM')
