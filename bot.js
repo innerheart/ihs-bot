@@ -81,7 +81,7 @@ client.on('message', message => {
     let embed = new Discord.RichEmbed()
     .setTitle(`${user.username}'s avatar`)
     .setImage(`${user.displayAvatarURL}`)
-    message.channel.send(embed)
+    message.channel.send({embed});
     }
 });
 
