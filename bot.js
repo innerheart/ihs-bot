@@ -21,7 +21,7 @@ client.on('message', message => {
     }
     
     if(command === 'husbando'){
-        message.channel.send('https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg');
+        message.channel.send({files:["https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg"]});
     }
     
     if(command === 'poker'){
