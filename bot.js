@@ -21,7 +21,7 @@ client.on('message', message => {
     }
     
     if(command === 'husbando'){
-        message.channel.send('https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg:large');
+        message.channel.send('https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg');
     }
     
     if(command === 'poker'){
@@ -66,6 +66,10 @@ client.on('message', message => {
     
     if(command === 'zoi'){
         message.channel.send({files:["http://i.imgur.com/yJ35t3i.png"]});
+    }
+    
+    if(command === 'fuc'){
+        message.channel.send({files:["https://pbs.twimg.com/media/DaC-iHXU0AA-gZF.jpg"]});
     }
    
     if (command === 'avatar') {
