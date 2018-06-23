@@ -71,7 +71,11 @@ client.on('message', message => {
     if(command === 'fuc'){
         message.channel.send({files:["https://pbs.twimg.com/media/DaC-iHXU0AA-gZF.jpg"]});
     }
-   
+    
+    if(command === 'fuc2'){
+        message.channel.send({files:["https://pbs.twimg.com/media/DaALwdkU0AIUvbS.jpg"]});
+    }
+    
     if (command === 'avatar') {
     let user = message.mentions.users.first() || message.author;        
     let embed = new Discord.RichEmbed()
