@@ -79,6 +79,7 @@ client.on('message', message => {
     if (command === 'avatar') {
     let user = message.mentions.users.first() || message.author;        
     let embed = new Discord.RichEmbed()
+    .setColor('RANDOM')
     .setTitle(`${user.username}'s avatar`)
     .setImage(`${user.displayAvatarURL}`)
     message.channel.send({embed});
