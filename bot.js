@@ -6,6 +6,8 @@ client.on('ready', () => {
     console.log('I am ready!');
 });
 
+client.user.setActivity(`with ihs.`)
+
 client.on('message', message => {
     if (message.author.bot) return undefined;
     let msg = message.content.toLowerCase();
