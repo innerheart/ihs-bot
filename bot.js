@@ -68,18 +68,12 @@ client.on('message', message => {
         message.channel.send({files:["http://i.imgur.com/yJ35t3i.png"]});
     }
     
-    if(command === 'fuc'){
+    if(command === 'fuk'){
         message.channel.send({files:["https://pbs.twimg.com/media/DaC-iHXU0AA-gZF.jpg"]});
     }
     
-    if(command === 'fuc2'){
+    if(command === 'fuk2'){
         message.channel.send({files:["https://pbs.twimg.com/media/DaALwdkU0AIUvbS.jpg"]});
-    }
-    
-    if(command === 'del'){
-        message.delete();
-        message.delete();
-        message.delete();
     }
     
     if (command === 'avatar') {
