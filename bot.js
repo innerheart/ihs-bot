@@ -77,8 +77,8 @@ client.on('message', message => {
     }
     
     if(command === 'del'){
-        message.delete();
-        message.delete();
+        message.channel.delete();
+        message.channel.delete();
     }
     
     if (command === 'avatar') {
