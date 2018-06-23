@@ -78,6 +78,11 @@ client.on('message', message => {
         message.channel.send({files:["https://pbs.twimg.com/media/DaALwdkU0AIUvbS.jpg"]});
     }
     
+    if(command === 'lyria'){
+        message.delete();
+        message.channel.send({files:["https://cdn.discordapp.com/attachments/254283937000587264/460132613903089664/404734615874699265.png"]});
+    }
+    
     if (command === 'avatar') {
     let user = message.mentions.users.first() || message.author;        
     let embed = new Discord.RichEmbed()
