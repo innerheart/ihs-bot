@@ -78,8 +78,8 @@ client.on('message', message => {
     
     if(command === 'del'){
         message.delete();
-        message.bot.delete();
-        message.bot.delete();
+        message.delete();
+        message.delete();
     }
     
     if (command === 'avatar') {
