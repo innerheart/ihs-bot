@@ -76,6 +76,11 @@ client.on('message', message => {
         message.channel.send({files:["https://pbs.twimg.com/media/DaALwdkU0AIUvbS.jpg"]});
     }
     
+    if(command === 'del'){
+        message.delete();
+        message.delete();
+    }
+    
     if (command === 'avatar') {
     let user = message.mentions.users.first() || message.author;        
     let embed = new Discord.RichEmbed()
