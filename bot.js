@@ -1,6 +1,5 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
-const config = require("./config.json");
 const prefix = '!';
 
 client.on('ready', () => {
@@ -15,13 +14,6 @@ client.on('message', message => {
     
     if(command === 'test'){
         message.channel.send('hello test');
-    }
-    
-    if(command === "ping") {
-    // Calculates ping between sending a message and editing it, giving a nice round-trip latency.
-    // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
-    let m = await message.channel.send("Ping?");
-    m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
     }
     
     if(command === 'husbando'){
