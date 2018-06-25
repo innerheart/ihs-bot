@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
+const token = require('./token.json').token;
 const prefix = '!';
 
 client.on('ready', () => {
@@ -14,6 +15,10 @@ client.on('message', message => {
     
     if(command === 'test'){
         message.channel.send('hello test');
+    }
+    
+    if(command === 'ping'){
+        message.channel.send('Pong! Your ping is `' + `${Date.now() - message.createdTimestamp}` + ' ms`');
     }
     
     if(command === 'husbando'){
