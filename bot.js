@@ -18,7 +18,7 @@ client.on('message', message => {
     }
     
     if(command === 'ping'){
-        message.channel.send(new Date().getTime() - message.createdTimestamp + " ms");
+        message.channel.send('Pong! Your ping is' + `${Date.now() - message.createdTimestamp}` + 'ms');
     }
     
     if(command === 'husbando'){
