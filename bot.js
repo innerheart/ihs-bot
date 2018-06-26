@@ -78,7 +78,11 @@ client.on('message', message => {
     
     if(command === 'lyria'){
         message.delete();
-        message.channel.send({files:["https://cdn.discordapp.com/attachments/254283937000587264/460132613903089664/404734615874699265.png"]});
+        message.channel.send({files:["https://pbs.twimg.com/media/DaBD457UwAA9w4T.jpg"]});
+    }
+    
+    if(command === '?'){
+        message.channel.send({files:["https://gbf.wiki/images/5/5e/Stamp222.png"]});
     }
     
     if (command === 'avatar') {
