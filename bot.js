@@ -28,6 +28,10 @@ client.on('message', message => {
         message.channel.send({files:["https://i.imgur.com/mQR1csw.png"]});
     }
     
+    if(command === 'poker2'){
+        message.channel.send({files:["https://i.imgur.com/G8Ja2KN.png"]});
+    }
+    
     if(command === 'snek'){
         message.channel.send("It's me, Snek!",{files:["https://i.imgur.com/JzYm9q7.png"]});
     }
@@ -80,6 +84,11 @@ client.on('message', message => {
         message.delete();
         message.channel.send({files:["https://pbs.twimg.com/media/DaBD457UwAA9w4T.jpg"]});
     }
+    
+    if(command === 'money'){
+        message.delete();
+        message.channel.send({files:["https://i.imgur.com/De3IcqZ.gif"]});
+    } 
     
     if(command === '?'){
         message.channel.send({files:["https://gbf.wiki/images/5/5e/Stamp222.png"]});
