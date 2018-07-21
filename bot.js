@@ -7,7 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    //if (message.author.bot) return undefined;
+    if (message.author.bot) return undefined;
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
@@ -92,11 +92,6 @@ client.on('message', message => {
     
     if(command === '?'){
         message.channel.send({files:["https://gbf.wiki/images/5/5e/Stamp222.png"]});
-    }
-    
-    if(command === 'bless'){
-        message.channel.send('!play https://www.youtube.com/watch?v=6_2IvSs35Lo');
-        message.delete();
     }
     
     if (command === 'avatar') {
