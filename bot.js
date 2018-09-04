@@ -105,7 +105,7 @@ client.on('message', message => {
     
      if(command === 'pick'){
         let pick = message.content.slice(prefix.length + 5).trim().split(',');
-        message.channel.send('I pick ' + `${pick[Math.floor(Math.random()* pick.length)] }\ `);
+        message.channel.send('I pick: ' + `${pick[Math.floor(Math.random()* pick.length)] }\ `);
          
     }
 });
