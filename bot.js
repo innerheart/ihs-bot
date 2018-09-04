@@ -102,6 +102,12 @@ client.on('message', message => {
     .setImage(`${user.displayAvatarURL}`)
     message.channel.send({embed});
     }
+    
+     if(command === 'pick'){
+        let pick = message.content.slice(prefix.length 5).trim().split(',');
+        message.channel.send('I pick ' + `${pick[Math.floor(Math.random()* pick.length)] }\ `);
+         
+    }
 });
 
 // THIS  MUST  BE  THIS  WAY
