@@ -11,6 +11,7 @@ client.on('message', message => {
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
+    let command = message.content.startsWith(message.content.startsWith(prefix) || message.author.bot)
     
     if(command === 'test'){
         message.channel.send('hello test');
