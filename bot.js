@@ -7,6 +7,7 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    let prefix = '!';
     if (message.author.bot) return undefined;
  //   if (message.content.indexOf(client.config.prefix) !== 0) return;
     let msg = message.content.toLowerCase();
