@@ -1,13 +1,6 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
-const bot = new commando.Client({
-    commandPrefix: prefix
-});
-bot.registry.registerGroup('random', 'Random');
-bot.registry.registerCommandsIn(__dirname + "/commands");
-
-bot.login('Botcode');
 
 client.on('ready', () => {
     console.log('I am ready!');
@@ -110,9 +103,9 @@ client.on('message', message => {
     message.channel.send({embed});
     }
     
-     if(command === 'pick'){
-        let pick = message.content.slice(prefix.length + 5).trim().split(',');
-        message.channel.send('I pick: ' + `${pick[Math.floor(Math.random()* pick.length)] }\ `);
+    if(command === 'pick'){
+    let pick = message.content.slice(prefix.length + 5).trim().split(',');
+    message.channel.send('I pick: ' + `${pick[Math.floor(Math.random()* pick.length)] }\ `);
          
     }
 });
