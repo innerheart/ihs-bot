@@ -8,12 +8,10 @@ client.on('ready', () => {
 
 client.on('message', message => {
     let prefix = '!';
-   // if (message.author.bot) return undefined;
- //   if (message.content.indexOf(client.config.prefix) !== 0) return;
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
-    if (message.author.bot || !msg.startsWith(prefix)) return undefined;
+    if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
     
     if(command === 'test'){
         message.channel.send('hello test');
