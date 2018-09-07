@@ -1,6 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
+const bot = new commando.Client({
+    commandPrefix: prefix
+});
+bot.registry.registerGroup('random', 'Random');
+bot.registry.registerCommandsIn(__dirname + "/commands");
+
+bot.login('Botcode');
 
 client.on('ready', () => {
     console.log('I am ready!');
