@@ -8,7 +8,7 @@ client.on('ready', () => {
 
 client.on('message', message => {
     if (message.author.bot) return undefined;
-    if (message.content.indexOf(client.config.prefix) !== 0) return;
+ //   if (message.content.indexOf(client.config.prefix) !== 0) return;
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
