@@ -87,12 +87,16 @@ client.on('message', message => {
     }
     
     if(command === 'money'){
-        message.delete();
+        //message.delete();
         message.channel.send({files:["https://i.imgur.com/De3IcqZ.gif"]});
     } 
     
     if(command === '?'){
         message.channel.send({files:["https://gbf.wiki/images/5/5e/Stamp222.png"]});
+    }
+    
+    if(command === 'skip'){
+        message.delete();
     }
     
     if (command === 'avatar') {
