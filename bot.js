@@ -13,6 +13,10 @@ client.on('message', message => {
     let command = args.shift().toLowerCase();
     if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
     
+    if(command === 'cmd'){
+        message.channel.send('```!test,!ping,!scary,!wow,!teehee,!nani,!huh,!money,!?,!avatar```');
+    }
+    
     if(command === 'test'){
         message.channel.send('hello test');
     }
