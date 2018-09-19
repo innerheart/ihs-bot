@@ -14,7 +14,11 @@ client.on('message', message => {
     if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
     
     if(command === 'cmd'){
-        message.channel.send('```!test,!ping,!scary,!wow,!teehee,!nani,!huh,!money,!?,!avatar```');
+        message.channel.send('```!test,!ping,!avatar,!pick```');
+    }
+    
+    if(command === 'emo'){
+        message.channel.send('```!scary, !wow, !teehee, !snek, !bea, !hitme, !nani, !huh, !money, !lyria, !zoi, !?, !fuk, !fuk2, !poker, !poker2, !husbando```');
     }
     
     if(command === 'test'){
