@@ -81,6 +81,10 @@ client.on('message', message => {
         message.channel.send({files:["http://i.imgur.com/yJ35t3i.png"]});
     }
     
+    if(command === 'nacl'){
+        message.channel.send({files:["https://cdn.discordapp.com/attachments/168754193417502722/513148036541710337/Capture.PNG"]});
+    }
+    
     if(command === 'fuk'){
         message.channel.send({files:["https://pbs.twimg.com/media/DaC-iHXU0AA-gZF.jpg"]});
     }
