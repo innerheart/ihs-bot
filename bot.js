@@ -7,8 +7,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
-    var hlp = "There is something about ```!emp```";
-    var emp = "```End Me Pls```";
+    var hlp = "There is something about `!emp`";
+    var emp = "`End Me Pls`";
     let prefix = '!';
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(' ');
