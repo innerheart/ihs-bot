@@ -28,7 +28,6 @@ client.on('message', message => {
     if(command === 'help'){
         message.channel.send({files:["https://s1.desu-usergeneratedcontent.xyz/g/image/1497/89/1497892557267.png"]});
         message.channel.send('`!emp`');
-        https://i.imgur.com/NVC0FAx.jpg
     }
     
      if(command === 'emp'){
