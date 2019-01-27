@@ -26,14 +26,11 @@ client.on('message', message => {
     }
     
     if(command === 'help'){
-        message.channel.send({files:["https://s1.desu-usergeneratedcontent.xyz/g/image/1497/89/1497892557267.png"]});
-        message.channel.send('`!emp`');
-    }
+        message.channel.send({files:["https://s1.desu-usergeneratedcontent.xyz/g/image/1497/89/1497892557267.png"]});    }
     
      if(command === 'emp'){
        message.channel.send({files:["https://i.imgur.com/NVC0FAx.jpg"]});
-       message.channel.send('`End Me Pls`');
-    }
+     }
     
     if(command === 'ping'){
         message.channel.send('Pong! Your ping is ' + `${Date.now() - message.createdTimestamp}` + ' ms');
