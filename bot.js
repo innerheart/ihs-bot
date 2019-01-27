@@ -7,6 +7,8 @@ client.on('ready', () => {
 });
 
 client.on('message', message => {
+    var hlp = "There is something about ```!emp```";
+    var emp = "```End Me Pls```";
     let prefix = '!';
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(' ');
@@ -26,10 +28,13 @@ client.on('message', message => {
     }
     
     if(command === 'help'){
-        message.channel.send({files:["https://s1.desu-usergeneratedcontent.xyz/g/image/1497/89/1497892557267.png"]});    }
+        message.channel.send({files:["https://s1.desu-usergeneratedcontent.xyz/g/image/1497/89/1497892557267.png"]}); 
+        message.channel.send(hlp);
+    }
     
      if(command === 'emp'){
        message.channel.send({files:["https://i.imgur.com/NVC0FAx.jpg"]});
+       message.channel.send(emp);
      }
     
     if(command === 'ping'){
