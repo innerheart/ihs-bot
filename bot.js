@@ -4,8 +4,8 @@ const prefix = '!';
 
 client.on('ready', () => {
     console.log('I am ready!');
-    //bot.user.setStatus('Online');
-    //bot.user.setGame('Type !help');
+    client.user.setActivity("Type !help"); 
+
 });
 
 client.on('message', message => {
@@ -40,7 +40,7 @@ client.on('message', message => {
      }
     
     if(command === 'ping'){
-        message.channel.send('Pong!' + `${Date.now() - message.createdTimestamp}` + ' ms');
+        message.channel.send('Pong! ' + `${Date.now() - message.createdTimestamp}` + ' ms');
     }
     
     if(command === 'husbando'){
