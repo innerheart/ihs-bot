@@ -4,10 +4,9 @@ const prefix = '!';
 
 client.on('ready', () => {
     console.log('I am ready!');
-    client.user.setActivity("Type !help"); 
 
 });
-
+client.user.setActivity("Type !help"); 
 client.on('message', message => {
     var hlp = "There is something about `!emp` **?**";
     var emp = "`End Me Pls`";
