@@ -4,8 +4,8 @@ const prefix = '!';
 
 client.on('ready', () => {
     console.log('I am ready!');
-    bot.user.setStatus('Online');
-    bot.user.setGame('Type !help');
+    //bot.user.setStatus('Online');
+    //bot.user.setGame('Type !help');
 });
 
 client.on('message', message => {
