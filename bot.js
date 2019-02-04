@@ -1,10 +1,8 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
-const activities_list = [
-    "Type !help", 
-    "with roulette",
-    ];
+const activities_list = ['Type !help', 'with roulette',];
+
 client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
