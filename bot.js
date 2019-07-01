@@ -59,28 +59,12 @@ client.on('message', message => {
         message.channel.send({files:["https://i.imgur.com/G8Ja2KN.png"]});
     }
     
-    if(command === 'snek'){
-        message.channel.send("It's me, Snek!",{files:["https://i.imgur.com/JzYm9q7.png"]});
-    }
-    
     if(command === 'gbfs'){
         message.channel.send({files:["https://i.imgur.com/6tLrau1.png"]});
     }
-    
-    if(command === 'bea'){
-        message.channel.send({files:["https://i.imgur.com/QkFvO2v.png"]});
-    }
-    
-    if(command === 'hitme'){
-        message.channel.send("**HIT ME !!**",{files:["https://i.imgur.com/TVpXU3V.png"]});
-    }
-    
+
     if(command === 'scary'){
         message.channel.send({files:["https://i.imgur.com/CQPF2tc.gif"]});
-    }
-    
-    if(command === 'wow'){
-        message.channel.send("☆ **WOW !** ☆",{files:["https://gbf.wiki/images/0/06/Stamp57jp.png"]});
     }
     
     if(command === 'teehee'){
@@ -94,21 +78,13 @@ client.on('message', message => {
      if(command === 'huh'){
         message.channel.send("Huh?",{files:["https://cdn.discordapp.com/attachments/168749859111698432/457664238446444546/C6.png"]});
     }
-    
-    if(command === 'zoi'){
-        message.channel.send({files:["http://i.imgur.com/yJ35t3i.png"]});
-    }
-    
+       
     if(command === 'nacl'){
         message.channel.send({files:["https://cdn.discordapp.com/attachments/168754193417502722/513148036541710337/Capture.PNG"]});
     }
     
     if(command === 'fuk'){
         message.channel.send({files:["https://pbs.twimg.com/media/DaC-iHXU0AA-gZF.jpg"]});
-    }
-    
-    if(command === 'fuk2'){
-        message.channel.send({files:["https://pbs.twimg.com/media/DaALwdkU0AIUvbS.jpg"]});
     }
     
     if(command === 'lyria'){
