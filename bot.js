@@ -20,8 +20,8 @@ client.on('message', message => {
     
     if(command === 'ping'){
        // message.channel.send('Pong! ' + `${Date.now() - message.createdTimestamp}` + ' ms');
-        message.channel.send(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}
-        ms. API Latency is ${Math.round(client.ping)}ms`);
+       const m = await message.channel.send("Ping?");
+        m.edit(`Pong! Latency is ${m.createdTimestamp - message.createdTimestamp}ms. API Latency is ${Math.round(client.ping)}ms`);
     }
     
     if(command === 'husbando'){
