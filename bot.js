@@ -21,23 +21,9 @@ client.on('message', message => {
     let command = args.shift().toLowerCase();
     if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
     
-    if(command === 'cmd'){
-        message.channel.send('```!test,!ping,!avatar,!pick```');
-    }
-    
-    if(command === 'test'){
+     if(command === 'test'){
         message.channel.send('hello test');
     }
-    
- /*  if(command === 'help'){
-        message.channel.send({files:["https://s1.desu-usergeneratedcontent.xyz/g/image/1497/89/1497892557267.png"]}); 
-        message.channel.send(hlp);
-    }
-    
-     if(command === 'emp'){
-       message.channel.send({files:["https://i.imgur.com/NVC0FAx.jpg"]});
-       message.channel.send(emp);
-     }*/
     
     if(command === 'ping'){
         message.channel.send('Pong! ' + `${Date.now() - message.createdTimestamp}` + ' ms');
