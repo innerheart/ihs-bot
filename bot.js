@@ -8,15 +8,13 @@ client.on('ready', () => {
     
 });
 client.on('message', message => {
-   // var hlp = "There is something about `!emp` **?**";
-   // var emp = "`End Me Pls`";
     let prefix = '!';
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
     if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
     
-     if(command === 'test'){
+    if(command === 'test'){
         message.channel.send('hello test');
     }
     
@@ -95,6 +93,16 @@ client.on('message', message => {
     let pick = message.content.slice(prefix.length + 5).trim().split(',');
     message.channel.send('I pick: ' + `${pick[Math.floor(Math.random()* pick.length)] }\ `);
          
+    }
+    
+    if(command === "say") {
+    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    message.delete().catch(O_o=>{}); 
+    // And we get the bot to say the thing: 
+    message.channel.send(sayMessage);
     }
 });
 
