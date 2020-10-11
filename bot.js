@@ -14,6 +14,10 @@ client.on('message', message => {
     let command = args.shift().toLowerCase();
     if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
     
+    if(message === 'tf'){
+        message.channel.send({files:["https://cdn.discordapp.com/attachments/576370983045431309/744181382171066458/image0-16.jpg"]});
+    }
+    
     if(command === 'test'){
         message.channel.send('hello test');
     }
