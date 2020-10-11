@@ -26,18 +26,6 @@ client.on('message', message => {
         message.channel.send('Pong! ' + `${Date.now() - message.createdTimestamp}` + ' ms');
     }
     
-    if(command === 'husbando'){
-        message.channel.send({files:["https://pbs.twimg.com/media/DfOB3DqWkAE83ZJ.jpg"]});
-    }
-    
-    if(command === 'poker'){
-        message.channel.send({files:["https://i.imgur.com/mQR1csw.png"]});
-    }
-    
-    if(command === 'poker2'){
-        message.channel.send({files:["https://i.imgur.com/G8Ja2KN.png"]});
-    }
-    
     if(command === 'gbfs'){
         message.channel.send({files:["https://i.imgur.com/6tLrau1.png"]});
     }
