@@ -12,7 +12,7 @@ client.on('message', message => {
     let msg = message.content.toLowerCase();
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
-    if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
+    //if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
     
     if(message === 'tf'){
         message.channel.send({files:["https://cdn.discordapp.com/attachments/576370983045431309/744181382171066458/image0-16.jpg"]});
