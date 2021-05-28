@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
-const activities_list = ['Type !help', 'with roulette',];
+const activities_list = ['Hello',];
 
 client.on('ready', () => {
     console.log("I am ready!");
