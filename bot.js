@@ -1,10 +1,13 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
-const activities_list = ['Hello',];
+const activities_list = ['Hello', "I'm totally not bot"];
 
 client.on('ready', () => {
-    console.log("I am ready!");
+    setInterval(() => {
+        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
+        client.user.setActivity(activities_list[index]); // sets bot's activities to one of the phrases in the arraylist.
+    }, 10000);
     
 });
 client.on('message', message => {
@@ -75,7 +78,7 @@ client.on('message', message => {
     
     if(command === 'choose'){
     let pick = message.content.slice(prefix.length + 5).trim().split(',');
-    message.channel.send( `${pick[Math.floor(Math.random()* pick.length)]} `);
+    message.channel.send( `${pick[Math.floor(Math.random()* pick.length)] }\ `);
          
     }
     
