@@ -1,10 +1,10 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
-const activities_list = ["Hello", "I'm totally not bot"];
+const activities_list = ["Hello",];
 
 client.on('ready', () => {
-    client.user.setActivity('', { type: 'Chilling' });
+    client.user.setActivity('with your feeling', { type: 'Playing'});
     /*
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); 
