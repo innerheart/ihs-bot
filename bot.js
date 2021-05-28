@@ -25,10 +25,6 @@ client.on('message', message => {
     if(command === 'ping'){
         message.channel.send('Pong! ' + `${Date.now() - message.createdTimestamp}` + ' ms');
     }
-    
-    if(command === 'gbfs'){
-        message.channel.send({files:["https://i.imgur.com/6tLrau1.png"]});
-    }
 
     if(command === 'scary'){
         message.channel.send({files:["https://i.imgur.com/CQPF2tc.gif"]});
@@ -66,10 +62,6 @@ client.on('message', message => {
     
     if(command === '?'){
         message.channel.send({files:["https://gbf.wiki/images/5/5e/Stamp222.png"]});
-    }
-    
-    if(command === 'skip'){
-        message.delete();
     }
     
     if (command === 'avatar') {
