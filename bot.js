@@ -1,7 +1,7 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 const prefix = '!';
-const activities_list = ["Hello",];
+//const activities_list = ["Hello",];
 
 client.on('ready', () => {
     //client.user.setActivity('with your feeling', { type: 'PLAYING'});
@@ -80,7 +80,7 @@ client.on('message', message => {
     
     if(command === 'choose'){
     let pick = message.content.slice(prefix.length + 5).trim().split(',');
-    message.channel.send('I pick ' + `${pick[Math.floor(Math.random()* pick.length)] }\ `);    
+    message.channel.send('I choose ' + `${pick[Math.floor(Math.random()* pick.length)] }\ `);    
     }
     
     if(command === "say") {
