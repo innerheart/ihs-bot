@@ -72,12 +72,12 @@ client.on('message', message => {
     .setImage(`${user.displayAvatarURL}`)
     message.channel.send({embed});
     }
-    
+    /*
     if(command === 'choose'){
     let pick = message.content.slice(prefix.length + 5).trim().split(',');
     message.channel.send( `${pick[Math.floor(Math.random()* pick.length)]} `);
          
-    }
+    }*/
     
     if(command === "say") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
