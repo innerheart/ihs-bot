@@ -3,7 +3,9 @@ const client = new Discord.Client();
 const prefix = '!';
 const activities_list = ["Hello", "I'm totally not bot"];
 
-client.on('ready', () => {/*
+client.on('ready', () => {
+    client.user.setActivity("Hello!");
+    /*
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); 
         client.user.setActivity(activities_list[index]);
