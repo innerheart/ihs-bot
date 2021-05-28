@@ -19,10 +19,6 @@ client.on('message', message => {
     let command = args.shift().toLowerCase();
     //if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
     
-    if(message === 'tf'){
-        message.channel.send({files:["https://cdn.discordapp.com/attachments/576370983045431309/744181382171066458/image0-16.jpg"]});
-    }
-    
     if(command === 'test'){
         message.channel.send('hello test');
     }
@@ -33,22 +29,6 @@ client.on('message', message => {
 
     if(command === 'scary'){
         message.channel.send({files:["https://i.imgur.com/CQPF2tc.gif"]});
-    }
-    
-    if(command === 'teehee'){
-        message.channel.send("Tee-Hee〜★",{files:["https://gbf.wiki/images/8/8f/Stamp142jp.png"]});
-    }
-    
-    if(command === 'nani'){
-        message.channel.send("N.. Nani ?",{files:["https://i.imgur.com/3gRthTt.jpg"]});
-    }
-    
-     if(command === 'huh'){
-        message.channel.send("Huh?",{files:["https://cdn.discordapp.com/attachments/168749859111698432/457664238446444546/C6.png"]});
-    }
-       
-    if(command === 'nacl'){
-        message.channel.send({files:["https://cdn.discordapp.com/attachments/168754193417502722/513148036541710337/Capture.PNG"]});
     }
     
     if(command === 'fuk'){
@@ -65,9 +45,6 @@ client.on('message', message => {
         message.channel.send({files:["https://i.imgur.com/De3IcqZ.gif"]});
     } 
     
-    if(command === '?'){
-        message.channel.send({files:["https://gbf.wiki/images/5/5e/Stamp222.png"]});
-    }
     
     if (command === 'avatar') {
     let user = message.mentions.users.first() || message.author;        
