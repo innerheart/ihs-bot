@@ -4,7 +4,7 @@ const prefix = '!';
 //const activities_list = ["Hello",];
 
 client.on('ready', () => {
-    client.user.setActivity('with your feeling', { type: 'PLAYING'});
+   // client.user.setActivity('with your feeling', { type: 'PLAYING'});
     /*
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); 
@@ -80,7 +80,7 @@ client.on('message', message => {
     
     if(command === 'choose'){
     let pick = message.content.slice(prefix.length + 5).trim().split(',');
-    message.channel.send('I choose ' + `${pick[Math.floor(Math.random()* pick.length)] } `);    
+    message.channel.send('I choose ' + `${pick[Math.floor(Math.random()* pick.length)] }\ `);    
     }
     
     if(command === "say") {
