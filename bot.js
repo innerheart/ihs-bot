@@ -3,12 +3,12 @@ const client = new Discord.Client();
 const prefix = '!';
 const activities_list = ["Hello", "I'm totally not bot"];
 
-client.on('ready', () => {
+client.on('ready', () => {/*
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); 
         client.user.setActivity(activities_list[index]);
     }, 10000);
-    
+    */
 });
 client.on('message', message => {
     let prefix = '!';
