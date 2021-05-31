@@ -4,7 +4,7 @@ const prefix = '!';
 //const activities_list = ["Hello",];
 
 client.on('ready', () => {
-    client.user.setActivity('with your feeling', { type: 'PLAYING'});
+   // client.user.setActivity('with your feeling', { type: 'PLAYING'});
     /*
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); 
