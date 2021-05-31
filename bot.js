@@ -77,4 +77,4 @@ client.on('message', message => {
 
 // THIS  MUST  BE  THIS  WAY
 
-client.login('NDU0OTY5OTYzMjMzNTQyMTY0.Wxu5zA.rUwUfszsF_I4DncnVj5ulZqf_Bw');
+client.login(process.env.TOKEN);
