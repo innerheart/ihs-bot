@@ -14,9 +14,11 @@ client.on('ready', () => {
 });
 client.on('message', message => {
     let prefix = '!';
-    let msg = message.content.toLowerCase();
+    
     let args = message.content.slice(prefix.length).trim().split(' ');
     let command = args.shift().toLowerCase();
+    
+    //let msg = message.content.toLowerCase();
     //if (message.author.bot || !msg.startsWith(prefix)) return; //undefined;
     
     if(command === 'test'){
@@ -57,7 +59,7 @@ client.on('message', message => {
     
     if(command === 'choose'){
     let pick = message.content.slice(prefix.length + 7).trim().split(',');
-    message.channel.send(`${pick[Math.floor(Math.random()* pick.length)] }\ `);
+    message.channel.send({pick[Math.floor(Math.random()* pick.length)]});
     }
     
     /*
